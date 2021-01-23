@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits Shop</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/jquery.ndd.js"></script>
+    <script src="/js/script.js" async></script>
+  </head>
+
+  <body>
+    <article id="ProductsContainer">
+      <header>
+        <h1>Fruits Shop</h1>
+      </header>
+      <ul id="products">
+        <li>
+          <section class="fruit" id="banana" draggable="true">
+            <img src="images/1.jpg" alt="Bananas" />
+            <div class="description">
+              <h4 class="name">Bananas</h4>
+              <div><b>Price:</b> <span class="price"> 0.55 </span>/ lb</div>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section class="fruit" id="apple" draggable="true">
+            <img src="images/2.jpg" alt="Apples" />
+            <div class="description">
+              <h4 class="name">Apples</h4>
+              <div><b>Price:</b> $<span class="price">1.44 </span> / lb</div>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section class="fruit" id="orange" draggable="true">
+            <img src="images/3.jpg" alt="Oranges" />
+            <div class="description">
+              <h4 class="name">Oranges</h4>
+              <div><b>Price:</b> $<span class="price">2.84 </span>/ lb</div>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section class="fruit" id="blackberries" draggable="true">
+            <img src="images/4.jpg" alt="Blackberries" />
+            <div class="description">
+              <h4 class="name">Blackberries</h4>
+              <div><b>Price:</b> $<span class="price">6.25</span> / lb</div>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section class="fruit" id="cherry" draggable="true">
+            <img src="images/5.jpg" alt="Cherries" />
+            <div class="description">
+              <h4 class="name">Cherries</h4>
+              <div><b>Price:</b> $<span class="price">4.77 </span>/ lb</div>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section class="fruit" id="plum" draggable="true">
+            <img src="images/6.jpg" alt="Plums" />
+            <div class="description">
+              <h4 class="name">Plums</h4>
+              <div><b>Price:</b> $<span class="price">3.36</span>/ lb</div>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </article>
+
+    <aside id="cartContainer">
+      <h2 id="headerCart">Cart</h2>
+      <ul id="cart"></ul>
+      <div id="transferInformation">Transfer fruits here</div>
+      <div id="price"><b>Subtotal: </b> $<span>0.00</span></div>
+    </aside>
+    <aside id="timeHandle"></aside>
+  </body>
+</html>
